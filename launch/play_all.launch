@@ -1,0 +1,7 @@
+<launch>
+  <arg name="bag_file" default="$(find spot_bag)/bags/example.bag" />
+
+  <param name="use_sim_time" type="bool" value="true" />
+
+  <node name="bag_player" pkg="rosbag" type="play" args="--clock --loop $(arg bag_file)" output="screen"/>
+</launch>

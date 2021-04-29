@@ -1,0 +1,15 @@
+<launch>
+  <arg name="bag_file" default="$(find spot_bag)/bags/example.bag" />
+  
+  <include file="$(find spot_bag)/launch/play_all.launch" >
+    <arg name="bag_file" value="$(arg bag_file)" />
+  </include>
+
+  <node name="image_view_right" pkg="image_view" type="image_view">
+    <remap from="image" to="/spot/camera/frontright/image" />
+  </node>
+  <node name="image_view_left" pkg="image_view" type="image_view">
+    <remap from="image" to="/spot/camera/frontleft/image" />
+  </node>
+
+</launch>

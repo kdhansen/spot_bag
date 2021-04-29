@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find spot_bag)/launch/play_all.launch">
+    <arg name="bag_file" value="$(find spot_bag)/bags/spot_backyard_2021-03-25-09-49-57.bag" />
+  </include>
+</launch>
