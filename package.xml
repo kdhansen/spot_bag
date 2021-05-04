@@ -12,6 +12,12 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
+  <exec_depend>image_view</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>spot_driver</exec_depend>
+  <exec_depend>spot_viz</exec_depend>
+  <exec_depend>image_rotate</exec_depend>
+
   <export>
   </export>
 </package>
